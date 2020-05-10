@@ -1,0 +1,24 @@
+version: "3.5"
+services:
+  app:
+    build: ./app
+    container_name: {app_container_name}
+    environment: #changer ces valeurs
+      VIRTUAL_HOST: {domain}
+      LETSENCRYPT_HOST: {domain}
+      LETSENCRYPT_EMAIL: {email}
+    restart: always
+    volumes:
+      - ./volumes/prestashop:/var/www/html
+
+  database: # name of the third service
+    build: ./database # specify the directory of the Dockerfile
+    container_name: {database_container_name}
+    restart: always
+    volumes:
+       - ./volumes/database:/var/lib/mysql
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
