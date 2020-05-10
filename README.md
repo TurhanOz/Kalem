@@ -27,7 +27,7 @@ It is up to you to create a backup policy that will match your requirements (for
 
 Courtesy
 ========
-This project is highly inspired from [François Romain]((https://medium.com/@francoisromain/) article : [Host multiple websites with HTTPS on a single server](https://medium.com/@francoisromain/host-multiple-websites-with-https-inside-docker-containers-on-a-single-server-18467484ab95).
+This project is highly inspired from [François Romain](https://medium.com/@francoisromain/) article : [Host multiple websites with HTTPS on a single server](https://medium.com/@francoisromain/host-multiple-websites-with-https-inside-docker-containers-on-a-single-server-18467484ab95).
 I customized his project and add a layer of automation through scripts, to minimize manual setup.
 
 License
